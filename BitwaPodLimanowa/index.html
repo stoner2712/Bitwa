@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="leaflet/leaflet.css"></script>
+    <link rel="stylesheet" href="style.css"></script>
+    
+   
+  </head>
+  <body class="body">
+    <div id="menuFaz" class="menuFaz">
+      <img onclick="faza1start()" class="faza1" src="img/menu1.png">
+      <img onclick="faza2start()" class="faza2" src="img/menu2.png">
+      <img onclick="faza3start()" class="faza3" src="img/menu3.png">
+      <img onclick="faza4start()" class="faza4" src="img/menu4.png">
+    </div>
+
+    <div  id="button1" class="button1">
+      <img onclick="openNav(); przycisk15()" src="img/radko.png">
+    </div>
+    <div  id="button2" class="button2">
+      <img onclick="openNav(); przycisk14()" src="img/jozio.png">
+    </div>
+
+      <div id="sidebar" class="sidebar">
+        <div id="title" class="title">
+          <h2>Operacja limanowsko-łapanowska 1914<br>Limanowsko-łapanowska military operation in 1914</h2>
+        </div>
+
+        <div id="lang" class="lang">
+          <ul id="sidebar-nav" class="sidebar-nav">
+            <li class="sidebar-tabs pl-tab active">
+                <img src="img/flagaPL.png"/>
+            </li>
+            <li class="sidebar-tabs sl-tab">
+                <img src="img/flagaGB.png"/>
+            </li>
+          </ul>
+          <!-- thumbnail image wrapped in a link -->
+            <a href="#img1">
+              <div id="sidebar-img" class="sidebar-img"></div>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img1">
+              <div class="sidebar-lightbox"></div>
+            </a>
+          
+          <div id="sidebar-text" class="sidebar-text pl-side displays">
+              <p id="p-text"></p>
+          </div>
+          <div id="sidebar-text" class="sidebar-text sl-side displays">
+            <p id="p-text"></p>
+          </div>
+          
+          <!-- miejsce na LOGO
+		  <div class="logo"><img id="logo" src="img/logotyp.jpg"></div> -->
+		  
+        </div>
+
+        </div>
+    <div id="image-map">
+      <script src="leaflet/leaflet.js"></script>
+      <script src="js/MovingMarker.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/main1.js"></script>
+      </div>
+    
+    
+  </body>
+  
+    
+</html>
